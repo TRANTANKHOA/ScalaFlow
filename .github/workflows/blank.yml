@@ -31,6 +31,10 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+
+    # Runs unit tests
+    - name: Unit tests
+      run: sbt test
     
     # Publish libraries to Maven Central using Scala's sbt
     - name: sbt to Maven Central
